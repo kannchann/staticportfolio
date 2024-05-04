@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    font-family: "Anonymous Pro", monospace;
+  
+}
+.homepage{
+
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+.logo{
+    color: white;
+  font-weight: 800;
+  font-size: 32px;
+
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+
+
+.navbar{
+    background-color: #B47B84;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+
+}
+.introduction{
+    padding-left: 32px;
+    display: grid;
+    grid-template-columns: 6fr 2fr ;
+    grid-template-rows: 1fr;
+ 
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+button{
+    padding: 8px;
+    font-size: large;
+    background-color: #944E63;
+    border-color: #B47B84;;
+  
+}
+a{
+    color: white;
+ text-decoration: none;
+
+}
+
+.projects-section{
+    background-color: #f1eded;
+    padding-bottom: 32px;
+
+   
+
+}
+#projects{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap:16px;
+
+
+}
+
+.card{
+   width: 350px;
+border: solid #B47B84;
+
+}
+
+
+
+
+@media(max-width:1200px){
+    
+    
+    .navbar a{
+        display: none;
+    }
+    .introduction{
+
+    padding-right: 16px;
+
+
+    }
+    .profile{
+        height: 400px;
+        object-fit: contain; 
+       
+    }
+    #projects{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+       
+        padding-left: 32px;
+        gap:8px;
+    
+    }
+}  
+
+@media(max-width:756px){
+    .introduction{
+        grid-template-columns: 1fr;
+    }
+    .profile{
+       height: 500px;
+        width: 100%;
+
+        margin-top: 16px;
+    }
+    #projects{
+   
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding-left: 32px;
+        gap:10px;
+    
+    }
+}
+
+
+.footer{
+    background-color: #944E63;
+    color: white;
+    padding-left: 32px;
+    padding-bottom: 8px;
+}
